@@ -1,10 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #0f172a;
-    color: #e2e8f0;
+    background-color: red;
 }
-
 /* Navbar */
 nav {
     display: flex;
