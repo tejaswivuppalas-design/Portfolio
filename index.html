@@ -4,56 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vuppala Tejaswi | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+<header>
     <nav>
-        <h1>Vuppala Tejaswi</h1>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#projects">Projects</a></li>
+        <ul class="nav-center">
+            <li><a onclick="showSection('hero')"><i class="fas fa-home"></i> Home</a></li>
+            <li><a onclick="showSection('about')"><i class="fas fa-user"></i> About</a></li>
+            <li><a onclick="showSection('skills')"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a onclick="showSection('projects')"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a onclick="showSection('certifications')"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a onclick="showSection('achievements')"><i class="fas fa-trophy"></i> Achievements</a></li>
+            <li><a onclick="showSection('contact')"><i class="fas fa-address-book"></i> Contact</a></li>
         </ul>
     </nav>
 </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am an Electronics and Communication Engineering student with a strong academic background 
-            and a keen interest in VLSI, Digital Design, and Embedded Systems.
-        </p>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>RTL Design</li>
-            <li>SystemVerilog</li>
-            <li>UVM (Basics)</li>
-            <li>Java (Basics)</li>
-        </ul>
-    </section>
+<!-- HERO -->
+<section id="hero" class="active">
+    <img src="profile.jpg" class="profile-img">
 
-    <section id="tools">
-        <h2>Tools</h2>
-        <ul>
-            <li>EDA Playground</li>
-            <li>Multisim</li>
-            <li>PSPICE</li>
-        </ul>
-    </section>
+    <h2>Vuppala Tejaswi</h2>
+    <p>ECE student with experience in RTL design, Verilog-based projects, and embedded systems.</p>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Coming Soon...</p>
-    </section>
+    <a href="resume.pdf" target="_blank">
+        <button><i class="fas fa-file"></i> View Resume</button>
+    </a>
+</section>
 
-    <footer>
-        <p>© 2026 Vuppala Tejaswi</p>
-    </footer>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About</h2>
+    <p>ECE student with strong academic background and interest in VLSI and digital systems.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>RTL Design</li>
+        <li>SystemVerilog</li>
+        <li>Verilog</li>
+        <li>Java, Python, C</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Smart Road Monitoring System</h3>
+        <p><strong>Technologies:</strong> ESP32, IoT, Sensors</p>
+        <p>Developed a system to detect potholes and road damage using sensors and ESP32.</p>
+    </div>
+
+    <div class="card">
+        <h3>UART Protocol Implementation</h3>
+        <p><strong>Technologies:</strong> Verilog</p>
+        <p>Designed UART transmitter and receiver modules and verified using simulation.</p>
+    </div>
+
+    <div class="card">
+        <h3>Library Management System</h3>
+        <p><strong>Technologies:</strong> Java</p>
+        <p>Developed a system to manage books with add, delete, and search features.</p>
+    </div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="card">Introduction to Generative AI – Coursera</div>
+    <div class="card">Prompt Engineering for ChatGPT – Coursera</div>
+    <div class="card">8051 Microcontrollers – Udemy</div>
+    <div class="card">Chip Engineering – L&T</div>
+    <div class="card">Deep Learning – NPTEL</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+    <h2>Achievements</h2>
+
+    <div class="card">Participated in JNTUGV Project Expo</div>
+    <div class="card">ISTE Coordinator – GMRIT</div>
+    <div class="card">Central Coordinator – STEPCONE 2025</div>
+    <div class="card">Radio Jockey at GMRIT FM</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card">
+        <p><i class="fas fa-envelope"></i> tejaswivuppalas@gmail.com</p>
+        <p><i class="fab fa-github"></i> https://github.com/tejaswivuppalas-design</p>
+        <p><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/vuppala-tejaswi-b7654b293</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Vuppala Tejaswi</p>
+</footer>
+
+<script>
+function showSection(id) {
+    const sections = document.querySelectorAll("section");
+    sections.forEach(s => s.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+</script>
 
 </body>
 </html>
