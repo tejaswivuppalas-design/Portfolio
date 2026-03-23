@@ -1,1 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+}
 
+/* Header */
+header {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1f2937;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f2937;
+    color: white;
+    margin-top: 20px;
+}
