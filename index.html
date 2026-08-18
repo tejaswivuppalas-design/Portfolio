@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,11 +10,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <!-- Font -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
@@ -30,57 +29,49 @@
 
                 <li>
                     <a onclick="showSection('hero')">
-                        <i class="fas fa-house"></i>
-                        Home
+                        <i class="fas fa-house"></i> Home
                     </a>
                 </li>
 
                 <li>
                     <a onclick="showSection('about')">
-                        <i class="fas fa-user"></i>
-                        About
+                        <i class="fas fa-user"></i> About
                     </a>
                 </li>
 
                 <li>
                     <a onclick="showSection('skills')">
-                        <i class="fas fa-code"></i>
-                        Skills
+                        <i class="fas fa-code"></i> Skills
                     </a>
                 </li>
 
                 <li>
                     <a onclick="showSection('projects')">
-                        <i class="fas fa-diagram-project"></i>
-                        Projects
+                        <i class="fas fa-diagram-project"></i> Projects
                     </a>
                 </li>
 
                 <li>
                     <a onclick="showSection('publications')">
-                        <i class="fas fa-book"></i>
-                        Publications
+                        <i class="fas fa-book-open"></i> Publications
                     </a>
                 </li>
 
                 <li>
                     <a onclick="showSection('certifications')">
-                        <i class="fas fa-certificate"></i>
-                        Certifications
+                        <i class="fas fa-certificate"></i> Certifications
                     </a>
                 </li>
 
                 <li>
                     <a onclick="showSection('achievements')">
-                        <i class="fas fa-trophy"></i>
-                        Achievements
+                        <i class="fas fa-trophy"></i> Achievements
                     </a>
                 </li>
 
                 <li>
                     <a onclick="showSection('contact')">
-                        <i class="fas fa-envelope"></i>
-                        Contact
+                        <i class="fas fa-envelope"></i> Contact
                     </a>
                 </li>
 
@@ -97,7 +88,8 @@
 
             <div class="profile-container">
 
-                <img src="profile.jpg"
+                <!-- YOUR PROFILE PHOTO -->
+                <img src="profile.jpeg"
                      class="profile-img"
                      alt="Vuppala Tejaswi">
 
@@ -116,6 +108,7 @@
                     programming and embedded systems.
                 </p>
 
+                <!-- RESUME -->
                 <a href="resume.pdf" target="_blank">
                     <button class="resume-btn">
                         <i class="fas fa-file-pdf"></i>
@@ -158,7 +151,9 @@
                 <div>
                     <i class="fas fa-graduation-cap"></i>
                     <strong>Education</strong>
-                    <span>B.Tech in Electronics and Communication Engineering</span>
+                    <span>
+                        B.Tech in Electronics and Communication Engineering
+                    </span>
                 </div>
 
                 <div>
@@ -191,7 +186,8 @@
 
         <div class="skills-grid">
 
-            <!-- Programming -->
+            <!-- Programming Languages -->
+
             <div class="skill-card">
 
                 <i class="fas fa-laptop-code skill-icon"></i>
@@ -208,6 +204,7 @@
 
 
             <!-- Tools -->
+
             <div class="skill-card">
 
                 <i class="fas fa-screwdriver-wrench skill-icon"></i>
@@ -225,6 +222,7 @@
 
 
             <!-- Soft Skills -->
+
             <div class="skill-card">
 
                 <i class="fas fa-people-group skill-icon"></i>
@@ -241,6 +239,7 @@
 
 
             <!-- Interests -->
+
             <div class="skill-card">
 
                 <i class="fas fa-lightbulb skill-icon"></i>
@@ -256,6 +255,7 @@
 
 
             <!-- Languages -->
+
             <div class="skill-card">
 
                 <i class="fas fa-language skill-icon"></i>
@@ -285,15 +285,17 @@
         </h2>
 
 
-        <!-- UART -->
+        <!-- PROJECT 1 -->
 
         <div class="project-card">
 
-            <div class="project-number">01</div>
+            <div class="project-number">
+                01
+            </div>
 
             <div class="project-content">
 
-                <h3>UART Protocol System</h3>
+                <h3>UART Protocol Implementation</h3>
 
                 <p class="technology">
                     <i class="fas fa-microchip"></i>
@@ -304,10 +306,10 @@
                     Implemented a UART (Universal Asynchronous Receiver
                     Transmitter) protocol using Verilog HDL in Quartus
                     Prime by designing transmitter and receiver modules
-                    with baud rate control. The design was verified through
-                    simulation to ensure accurate timing, correct
-                    start/stop bit detection, and reliable serial data
-                    transmission and reception.
+                    with baud rate generation and control. The design
+                    was verified through simulation to ensure accurate
+                    timing, correct start/stop bit detection, and reliable
+                    serial data transmission and reception.
                 </p>
 
             </div>
@@ -315,11 +317,13 @@
         </div>
 
 
-        <!-- Smart Road -->
+        <!-- PROJECT 2 -->
 
         <div class="project-card">
 
-            <div class="project-number">02</div>
+            <div class="project-number">
+                02
+            </div>
 
             <div class="project-content">
 
@@ -331,12 +335,12 @@
                 </p>
 
                 <p>
-                    Designed a Smart Road Monitoring System using ESP32
-                    and sensors to detect potholes and obstacles on a
-                    road surface in real time. The system focuses on
-                    continuous monitoring of road conditions and
-                    identifying damaged areas for improved road safety
-                    and maintenance.
+                    Developed a Smart Road Monitoring System using ESP32
+                    and multiple sensors to monitor road conditions and
+                    detect potholes and obstacles. The system collects
+                    sensor data in real time and provides a method for
+                    monitoring road conditions to support improved road
+                    safety and maintenance.
                 </p>
 
             </div>
@@ -344,11 +348,13 @@
         </div>
 
 
-        <!-- Library -->
+        <!-- PROJECT 3 -->
 
         <div class="project-card">
 
-            <div class="project-number">03</div>
+            <div class="project-number">
+                03
+            </div>
 
             <div class="project-content">
 
@@ -360,12 +366,12 @@
                 </p>
 
                 <p>
-                    Built a Java-based Library Management System to
-                    manage book inventory, member records and book
-                    issue/return operations using object-oriented
-                    programming principles. The system provides an
-                    organized approach to handling library records
-                    and basic operations.
+                    Implemented a Java-based Library Management System
+                    to manage book records and basic library operations.
+                    The system includes functionalities for adding,
+                    deleting, searching and updating book information
+                    using basic Java programming and object-oriented
+                    programming concepts.
                 </p>
 
             </div>
@@ -373,11 +379,13 @@
         </div>
 
 
-        <!-- Hotel -->
+        <!-- PROJECT 4 -->
 
         <div class="project-card">
 
-            <div class="project-number">04</div>
+            <div class="project-number">
+                04
+            </div>
 
             <div class="project-content">
 
@@ -390,10 +398,10 @@
 
                 <p>
                     Created a Java-based Hotel Reservation System to
-                    manage room bookings, customer details and
-                    reservation records efficiently. The project
-                    focuses on organized handling of reservation
-                    information and basic booking operations.
+                    manage room reservations and customer information.
+                    The project focuses on handling booking details
+                    and basic reservation operations in an organized
+                    manner.
                 </p>
 
             </div>
@@ -418,7 +426,7 @@
                 <i class="fas fa-newspaper"></i>
             </div>
 
-            <div>
+            <div class="publication-content">
 
                 <p class="publication-label">
                     IFERP Publication
@@ -457,33 +465,77 @@
         <div class="certifications-grid">
 
             <div class="cert-card">
+
                 <i class="fas fa-microchip"></i>
-                <h3>8051 Microcontrollers</h3>
-                <p>Udemy</p>
+
+                <h3>
+                    8051 Microcontrollers
+                </h3>
+
+                <p>
+                    Udemy
+                </p>
+
             </div>
 
+
             <div class="cert-card">
+
                 <i class="fas fa-wifi"></i>
-                <h3>Sensors, Actuators & IoT Unleashed</h3>
-                <p>GMR Institute of Technology</p>
+
+                <h3>
+                    Sensors, Actuators & IoT Unleashed
+                </h3>
+
+                <p>
+                    GMR Institute of Technology
+                </p>
+
             </div>
 
+
             <div class="cert-card">
+
                 <i class="fas fa-brain"></i>
-                <h3>Deep Learning, Affective Computing</h3>
-                <p>NPTEL</p>
+
+                <h3>
+                    Deep Learning, Affective Computing
+                </h3>
+
+                <p>
+                    NPTEL
+                </p>
+
             </div>
 
+
             <div class="cert-card">
+
                 <i class="fas fa-robot"></i>
-                <h3>Introduction to Generative AI</h3>
-                <p>Coursera</p>
+
+                <h3>
+                    Introduction to Generative AI
+                </h3>
+
+                <p>
+                    Coursera
+                </p>
+
             </div>
 
+
             <div class="cert-card">
+
                 <i class="fab fa-python"></i>
-                <h3>Python Programming Skills (Basic)</h3>
-                <p>Codio</p>
+
+                <h3>
+                    Python Programming Skills (Basic)
+                </h3>
+
+                <p>
+                    Codio
+                </p>
+
             </div>
 
         </div>
@@ -500,13 +552,21 @@
             Achievements & Activities
         </h2>
 
+
         <div class="achievement-card">
 
             <i class="fas fa-users"></i>
 
             <div>
-                <h3>ISTE Coordinator</h3>
-                <p>Coordinator at GMR Institute of Technology</p>
+
+                <h3>
+                    ISTE Coordinator
+                </h3>
+
+                <p>
+                    Coordinator at GMR Institute of Technology
+                </p>
+
             </div>
 
         </div>
@@ -517,8 +577,15 @@
             <i class="fas fa-radio"></i>
 
             <div>
-                <h3>Radio Jockey</h3>
-                <p>FM Radio – 90.4 MHz at college</p>
+
+                <h3>
+                    Radio Jockey
+                </h3>
+
+                <p>
+                    FM Radio – 90.4 MHz at college
+                </p>
+
             </div>
 
         </div>
@@ -529,8 +596,15 @@
             <i class="fas fa-lightbulb"></i>
 
             <div>
-                <h3>JNTUGV Project Expo</h3>
-                <p>Participated in JNTUGV Project Expo</p>
+
+                <h3>
+                    JNTUGV Project Expo
+                </h3>
+
+                <p>
+                    Participated in JNTUGV Project Expo
+                </p>
+
             </div>
 
         </div>
@@ -549,17 +623,26 @@
 
         <div class="contact-grid">
 
+
+            <!-- EMAIL -->
+
             <a href="mailto:tejaswivuppalas@gmail.com"
                class="contact-card">
 
                 <i class="fas fa-envelope"></i>
 
-                <span>Email</span>
+                <span>
+                    Email
+                </span>
 
-                <p>tejaswivuppalas@gmail.com</p>
+                <p>
+                    tejaswivuppalas@gmail.com
+                </p>
 
             </a>
 
+
+            <!-- GITHUB -->
 
             <a href="https://github.com/tejaswivuppalas-design"
                target="_blank"
@@ -567,12 +650,18 @@
 
                 <i class="fab fa-github"></i>
 
-                <span>GitHub</span>
+                <span>
+                    GitHub
+                </span>
 
-                <p>tejaswivuppalas-design</p>
+                <p>
+                    tejaswivuppalas-design
+                </p>
 
             </a>
 
+
+            <!-- LINKEDIN -->
 
             <a href="https://www.linkedin.com/in/vuppala-tejaswi-b7654b293"
                target="_blank"
@@ -580,9 +669,13 @@
 
                 <i class="fab fa-linkedin"></i>
 
-                <span>LinkedIn</span>
+                <span>
+                    LinkedIn
+                </span>
 
-                <p>Vuppala Tejaswi</p>
+                <p>
+                    Vuppala Tejaswi
+                </p>
 
             </a>
 
@@ -610,8 +703,10 @@
 
             const sections = document.querySelectorAll("section");
 
-            sections.forEach(section => {
+            sections.forEach(function(section) {
+
                 section.style.display = "none";
+
             });
 
             document.getElementById(id).style.display = "block";
@@ -620,6 +715,7 @@
                 top: 0,
                 behavior: "smooth"
             });
+
         }
 
     </script>
@@ -627,4 +723,3 @@
 </body>
 
 </html>
-```
