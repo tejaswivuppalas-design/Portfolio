@@ -1,130 +1,630 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Vuppala Tejaswi | Portfolio</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <ul class="nav-center">
-            <li><a onclick="showSection('hero')"><i class="fas fa-home"></i> Home</a></li>
-            <li><a onclick="showSection('about')"><i class="fas fa-user"></i> About</a></li>
-            <li><a onclick="showSection('skills')"><i class="fas fa-code"></i> Skills</a></li>
-            <li><a onclick="showSection('projects')"><i class="fas fa-project-diagram"></i> Projects</a></li>
-            <li><a onclick="showSection('certifications')"><i class="fas fa-certificate"></i> Certifications</a></li>
-            <li><a onclick="showSection('achievements')"><i class="fas fa-trophy"></i> Achievements</a></li>
-            <li><a onclick="showSection('contact')"><i class="fas fa-address-book"></i> Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- ================= NAVIGATION ================= -->
 
-<!-- HERO -->
-<section id="hero" class="active">
-    <img src="profile.jpg" class="profile-img">
+    <header>
+        <nav>
+            <ul class="nav-center">
 
-    <h2>Vuppala Tejaswi</h2>
-    <p>ECE student with experience in RTL design, Verilog-based projects, and embedded systems.</p>
+                <li>
+                    <a onclick="showSection('hero')">
+                        <i class="fas fa-house"></i>
+                        Home
+                    </a>
+                </li>
 
-    <a href="resume.pdf" target="_blank">
-        <button><i class="fas fa-file"></i> View Resume</button>
-    </a>
-</section>
+                <li>
+                    <a onclick="showSection('about')">
+                        <i class="fas fa-user"></i>
+                        About
+                    </a>
+                </li>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About</h2>
-    <p>ECE student with strong academic background and interest in VLSI and digital systems.</p>
-</section>
+                <li>
+                    <a onclick="showSection('skills')">
+                        <i class="fas fa-code"></i>
+                        Skills
+                    </a>
+                </li>
 
-<!-- SKILLS -->
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>RTL Design</li>
-        <li>SystemVerilog</li>
-        <li>Verilog</li>
-        <li>Java, Python, C</li>
-    </ul>
-</section>
+                <li>
+                    <a onclick="showSection('projects')">
+                        <i class="fas fa-diagram-project"></i>
+                        Projects
+                    </a>
+                </li>
 
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Projects</h2>
+                <li>
+                    <a onclick="showSection('publications')">
+                        <i class="fas fa-book"></i>
+                        Publications
+                    </a>
+                </li>
 
-    <div class="card">
-        <h3>Smart Road Monitoring System</h3>
-        <p><strong>Technologies:</strong> ESP32, IoT, Sensors</p>
-        <p>Developed a system to detect potholes and road damage using sensors and ESP32.</p>
-    </div>
+                <li>
+                    <a onclick="showSection('certifications')">
+                        <i class="fas fa-certificate"></i>
+                        Certifications
+                    </a>
+                </li>
 
-    <div class="card">
-        <h3>UART Protocol Implementation</h3>
-        <p><strong>Technologies:</strong> Verilog</p>
-        <p>Designed UART transmitter and receiver modules and verified using simulation.</p>
-    </div>
+                <li>
+                    <a onclick="showSection('achievements')">
+                        <i class="fas fa-trophy"></i>
+                        Achievements
+                    </a>
+                </li>
 
-    <div class="card">
-        <h3>Library Management System</h3>
-        <p><strong>Technologies:</strong> Java</p>
-        <p>Developed a system to manage books with add, delete, and search features.</p>
-    </div>
+                <li>
+                    <a onclick="showSection('contact')">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
 
-</section>
+            </ul>
+        </nav>
+    </header>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-    <h2>Certifications</h2>
 
-    <div class="card">Introduction to Generative AI – Coursera</div>
-    <div class="card">Prompt Engineering for ChatGPT – Coursera</div>
-    <div class="card">8051 Microcontrollers – Udemy</div>
-    <div class="card">Chip Engineering – L&T</div>
-    <div class="card">Deep Learning – NPTEL</div>
-</section>
+    <!-- ================= HOME ================= -->
 
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-    <h2>Achievements</h2>
+    <section id="hero" class="active">
 
-    <div class="card">Participated in JNTUGV Project Expo</div>
-    <div class="card">ISTE Coordinator – GMRIT</div>
-    <div class="card">Central Coordinator – STEPCONE 2025</div>
-    <div class="card">Radio Jockey at GMRIT FM</div>
-</section>
+        <div class="hero-content">
 
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
+            <div class="profile-container">
 
-    <div class="card">
-        <p><i class="fas fa-envelope"></i> tejaswivuppalas@gmail.com</p>
-        <p><i class="fab fa-github"></i> https://github.com/tejaswivuppalas-design</p>
-        <p><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/vuppala-tejaswi-b7654b293</p>
-    </div>
-</section>
+                <img src="profile.jpg"
+                     class="profile-img"
+                     alt="Vuppala Tejaswi">
 
-<footer>
-    <p>© 2026 Vuppala Tejaswi</p>
-</footer>
+            </div>
 
-<script>
-function showSection(id) {
-    const sections = document.querySelectorAll("section");
-    sections.forEach(s => s.style.display = "none");
-    document.getElementById(id).style.display = "block";
-}
-</script>
+            <div class="hero-text">
+
+                <p class="hello">Hello, I'm</p>
+
+                <h1>Vuppala Tejaswi</h1>
+
+                <h3>Electronics and Communication Engineering Student</h3>
+
+                <p class="hero-description">
+                    ECE student with knowledge of digital design,
+                    programming and embedded systems.
+                </p>
+
+                <a href="resume.pdf" target="_blank">
+                    <button class="resume-btn">
+                        <i class="fas fa-file-pdf"></i>
+                        View Resume
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            <i class="fas fa-user"></i>
+            About Me
+        </h2>
+
+        <div class="about-card">
+
+            <p>
+                I am an Electronics and Communication Engineering student
+                at GMR Institute of Technology with a strong academic
+                background and hands-on experience through internships
+                and academic projects.
+            </p>
+
+            <p>
+                My academic work includes digital design, Verilog-based
+                projects, embedded systems and Java programming.
+            </p>
+
+            <div class="about-details">
+
+                <div>
+                    <i class="fas fa-graduation-cap"></i>
+                    <strong>Education</strong>
+                    <span>B.Tech in Electronics and Communication Engineering</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-star"></i>
+                    <strong>GPA</strong>
+                    <span>8.92</span>
+                </div>
+
+                <div>
+                    <i class="fas fa-microchip"></i>
+                    <strong>Honours</strong>
+                    <span>System-on-Chip Design</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            <i class="fas fa-code"></i>
+            Skills
+        </h2>
+
+        <div class="skills-grid">
+
+            <!-- Programming -->
+            <div class="skill-card">
+
+                <i class="fas fa-laptop-code skill-icon"></i>
+
+                <h3>Programming Languages</h3>
+
+                <div class="skill-list">
+                    <span>Verilog</span>
+                    <span>Java</span>
+                    <span>Python</span>
+                </div>
+
+            </div>
+
+
+            <!-- Tools -->
+            <div class="skill-card">
+
+                <i class="fas fa-screwdriver-wrench skill-icon"></i>
+
+                <h3>Tools & Platforms</h3>
+
+                <div class="skill-list">
+                    <span>Xilinx Vivado</span>
+                    <span>Cadence Virtuoso</span>
+                    <span>VS Code</span>
+                    <span>Jupyter Notebook</span>
+                </div>
+
+            </div>
+
+
+            <!-- Soft Skills -->
+            <div class="skill-card">
+
+                <i class="fas fa-people-group skill-icon"></i>
+
+                <h3>Soft Skills</h3>
+
+                <div class="skill-list">
+                    <span>Problem Solving</span>
+                    <span>Team Collaboration</span>
+                    <span>Communication Skills</span>
+                </div>
+
+            </div>
+
+
+            <!-- Interests -->
+            <div class="skill-card">
+
+                <i class="fas fa-lightbulb skill-icon"></i>
+
+                <h3>Interests</h3>
+
+                <div class="skill-list">
+                    <span>Public Speaking</span>
+                    <span>Learning Emerging Technologies</span>
+                </div>
+
+            </div>
+
+
+            <!-- Languages -->
+            <div class="skill-card">
+
+                <i class="fas fa-language skill-icon"></i>
+
+                <h3>Languages</h3>
+
+                <div class="skill-list">
+                    <span>English</span>
+                    <span>Telugu</span>
+                    <span>Hindi</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            <i class="fas fa-diagram-project"></i>
+            Projects
+        </h2>
+
+
+        <!-- UART -->
+
+        <div class="project-card">
+
+            <div class="project-number">01</div>
+
+            <div class="project-content">
+
+                <h3>UART Protocol System</h3>
+
+                <p class="technology">
+                    <i class="fas fa-microchip"></i>
+                    Verilog HDL | Quartus Prime
+                </p>
+
+                <p>
+                    Implemented a UART (Universal Asynchronous Receiver
+                    Transmitter) protocol using Verilog HDL in Quartus
+                    Prime by designing transmitter and receiver modules
+                    with baud rate control. The design was verified through
+                    simulation to ensure accurate timing, correct
+                    start/stop bit detection, and reliable serial data
+                    transmission and reception.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Smart Road -->
+
+        <div class="project-card">
+
+            <div class="project-number">02</div>
+
+            <div class="project-content">
+
+                <h3>Smart Road Monitoring System</h3>
+
+                <p class="technology">
+                    <i class="fas fa-microchip"></i>
+                    ESP32 | Sensors | IoT
+                </p>
+
+                <p>
+                    Designed a Smart Road Monitoring System using ESP32
+                    and sensors to detect potholes and obstacles on a
+                    road surface in real time. The system focuses on
+                    continuous monitoring of road conditions and
+                    identifying damaged areas for improved road safety
+                    and maintenance.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Library -->
+
+        <div class="project-card">
+
+            <div class="project-number">03</div>
+
+            <div class="project-content">
+
+                <h3>Library Management System</h3>
+
+                <p class="technology">
+                    <i class="fab fa-java"></i>
+                    Java | Object-Oriented Programming
+                </p>
+
+                <p>
+                    Built a Java-based Library Management System to
+                    manage book inventory, member records and book
+                    issue/return operations using object-oriented
+                    programming principles. The system provides an
+                    organized approach to handling library records
+                    and basic operations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Hotel -->
+
+        <div class="project-card">
+
+            <div class="project-number">04</div>
+
+            <div class="project-content">
+
+                <h3>Hotel Reservation System</h3>
+
+                <p class="technology">
+                    <i class="fab fa-java"></i>
+                    Java
+                </p>
+
+                <p>
+                    Created a Java-based Hotel Reservation System to
+                    manage room bookings, customer details and
+                    reservation records efficiently. The project
+                    focuses on organized handling of reservation
+                    information and basic booking operations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PUBLICATIONS ================= -->
+
+    <section id="publications">
+
+        <h2 class="section-title">
+            <i class="fas fa-book-open"></i>
+            Publications
+        </h2>
+
+        <div class="publication-card">
+
+            <div class="publication-icon">
+                <i class="fas fa-newspaper"></i>
+            </div>
+
+            <div>
+
+                <p class="publication-label">
+                    IFERP Publication
+                </p>
+
+                <h3>
+                    Demux and Mux using IBM Quantum
+                </h3>
+
+                <p>
+                    Publication based on the implementation and
+                    exploration of Demultiplexer and Multiplexer
+                    concepts using IBM Quantum.
+                </p>
+
+                <span class="publication-tag">
+                    Publication
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
+    <section id="certifications">
+
+        <h2 class="section-title">
+            <i class="fas fa-certificate"></i>
+            Certifications
+        </h2>
+
+        <div class="certifications-grid">
+
+            <div class="cert-card">
+                <i class="fas fa-microchip"></i>
+                <h3>8051 Microcontrollers</h3>
+                <p>Udemy</p>
+            </div>
+
+            <div class="cert-card">
+                <i class="fas fa-wifi"></i>
+                <h3>Sensors, Actuators & IoT Unleashed</h3>
+                <p>GMR Institute of Technology</p>
+            </div>
+
+            <div class="cert-card">
+                <i class="fas fa-brain"></i>
+                <h3>Deep Learning, Affective Computing</h3>
+                <p>NPTEL</p>
+            </div>
+
+            <div class="cert-card">
+                <i class="fas fa-robot"></i>
+                <h3>Introduction to Generative AI</h3>
+                <p>Coursera</p>
+            </div>
+
+            <div class="cert-card">
+                <i class="fab fa-python"></i>
+                <h3>Python Programming Skills (Basic)</h3>
+                <p>Codio</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section id="achievements">
+
+        <h2 class="section-title">
+            <i class="fas fa-trophy"></i>
+            Achievements & Activities
+        </h2>
+
+        <div class="achievement-card">
+
+            <i class="fas fa-users"></i>
+
+            <div>
+                <h3>ISTE Coordinator</h3>
+                <p>Coordinator at GMR Institute of Technology</p>
+            </div>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+            <i class="fas fa-radio"></i>
+
+            <div>
+                <h3>Radio Jockey</h3>
+                <p>FM Radio – 90.4 MHz at college</p>
+            </div>
+
+        </div>
+
+
+        <div class="achievement-card">
+
+            <i class="fas fa-lightbulb"></i>
+
+            <div>
+                <h3>JNTUGV Project Expo</h3>
+                <p>Participated in JNTUGV Project Expo</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="section-title">
+            <i class="fas fa-address-card"></i>
+            Contact
+        </h2>
+
+        <div class="contact-grid">
+
+            <a href="mailto:tejaswivuppalas@gmail.com"
+               class="contact-card">
+
+                <i class="fas fa-envelope"></i>
+
+                <span>Email</span>
+
+                <p>tejaswivuppalas@gmail.com</p>
+
+            </a>
+
+
+            <a href="https://github.com/tejaswivuppalas-design"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fab fa-github"></i>
+
+                <span>GitHub</span>
+
+                <p>tejaswivuppalas-design</p>
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/vuppala-tejaswi-b7654b293"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fab fa-linkedin"></i>
+
+                <span>LinkedIn</span>
+
+                <p>Vuppala Tejaswi</p>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Vuppala Tejaswi
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function showSection(id) {
+
+            const sections = document.querySelectorAll("section");
+
+            sections.forEach(section => {
+                section.style.display = "none";
+            });
+
+            document.getElementById(id).style.display = "block";
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+    </script>
 
 </body>
+
 </html>
+```
