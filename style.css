@@ -1,6 +1,5 @@
-```css
 /* =====================================================
-   GENERAL
+   BASIC SETTINGS
 ===================================================== */
 
 * {
@@ -14,14 +13,20 @@ html {
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #07111f;
+
+    background:
+        radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.08), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.08), transparent 30%),
+        #050b14;
+
     color: #e5edf7;
+
     text-align: center;
 }
 
 
 /* =====================================================
-   NAVIGATION
+   NAVIGATION BAR
 ===================================================== */
 
 nav {
@@ -29,38 +34,40 @@ nav {
     top: 0;
     z-index: 1000;
 
-    background: rgba(2, 10, 20, 0.96);
+    padding: 17px 10px;
+
+    background: rgba(2, 8, 18, 0.96);
 
     border-bottom: 1px solid rgba(56, 189, 248, 0.2);
 
-    padding: 18px 10px;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 }
 
 .nav-center {
     display: flex;
+
     justify-content: center;
     align-items: center;
 
     flex-wrap: wrap;
 
-    gap: 25px;
+    gap: 22px;
+
+    list-style: none;
 
     margin: 0;
     padding: 0;
-
-    list-style: none;
 }
 
 .nav-center li a {
-    color: #dbeafe;
+    color: #dce7f3;
 
     text-decoration: none;
 
     cursor: pointer;
 
-    font-size: 14px;
+    font-size: 13px;
+
     font-weight: 500;
 
     transition: 0.3s;
@@ -68,6 +75,7 @@ nav {
 
 .nav-center li a i {
     color: #38bdf8;
+
     margin-right: 5px;
 }
 
@@ -86,22 +94,22 @@ section {
     display: none;
 
     width: 88%;
+
     max-width: 1100px;
 
     margin: 45px auto;
 
     padding: 45px 35px;
 
-    background: #0d1b2a;
+    background: rgba(13, 27, 42, 0.94);
 
     border: 1px solid rgba(56, 189, 248, 0.12);
 
     border-radius: 18px;
 
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
 
-    animation: sectionAppear 0.45s ease;
+    animation: sectionAppear 0.4s ease;
 }
 
 #hero {
@@ -119,14 +127,16 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
 
 
 /* =====================================================
-   HERO
+   HOME
 ===================================================== */
 
 .hero-content {
+
     min-height: 65vh;
 
     display: flex;
@@ -139,13 +149,17 @@ section {
     flex-wrap: wrap;
 }
 
+
+/* PROFILE PHOTO */
+
 .profile-container {
     position: relative;
 }
 
 .profile-img {
-    width: 210px;
-    height: 210px;
+
+    width: 215px;
+    height: 215px;
 
     object-fit: cover;
 
@@ -161,8 +175,15 @@ section {
 }
 
 .profile-img:hover {
-    transform: scale(1.04);
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 0 10px rgba(56, 189, 248, 0.08),
+        0 0 45px rgba(56, 189, 248, 0.35);
 }
+
+
+/* HERO TEXT */
 
 .hero-text {
     max-width: 560px;
@@ -179,22 +200,25 @@ section {
 }
 
 .hero-text h1 {
-    font-size: 48px;
 
     margin: 0;
+
+    font-size: 48px;
 
     color: #ffffff;
 }
 
 .hero-text h3 {
-    color: #b9c9d9;
+
+    margin-top: 10px;
+
+    color: #b7c8d9;
 
     font-weight: 500;
-
-    margin-top: 8px;
 }
 
 .hero-description {
+
     color: #9fb0c1;
 
     line-height: 1.8;
@@ -202,13 +226,14 @@ section {
 
 
 /* =====================================================
-   BUTTON
+   RESUME BUTTON
 ===================================================== */
 
 .resume-btn {
+
     margin-top: 15px;
 
-    padding: 12px 22px;
+    padding: 12px 23px;
 
     border: none;
 
@@ -232,30 +257,33 @@ section {
 }
 
 .resume-btn:hover {
+
     background: #7dd3fc;
 
     transform: translateY(-3px);
 
-    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.25);
 }
 
 
 /* =====================================================
-   SECTION TITLE
+   SECTION TITLES
 ===================================================== */
 
 .section-title {
+
+    margin-bottom: 35px;
+
     color: #ffffff;
 
     font-size: 30px;
-
-    margin-bottom: 35px;
 }
 
 .section-title i {
-    color: #38bdf8;
 
     margin-right: 10px;
+
+    color: #38bdf8;
 }
 
 
@@ -264,6 +292,7 @@ section {
 ===================================================== */
 
 .about-card {
+
     max-width: 850px;
 
     margin: auto;
@@ -276,10 +305,10 @@ section {
 }
 
 .about-details {
+
     display: grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 18px;
 
@@ -287,11 +316,12 @@ section {
 }
 
 .about-details div {
+
     display: flex;
 
     flex-direction: column;
 
-    gap: 5px;
+    gap: 6px;
 
     padding: 20px;
 
@@ -303,16 +333,19 @@ section {
 }
 
 .about-details i {
+
     color: #38bdf8;
 
     font-size: 22px;
 }
 
 .about-details strong {
+
     color: #ffffff;
 }
 
 .about-details span {
+
     color: #9fb0c1;
 
     font-size: 14px;
@@ -324,10 +357,10 @@ section {
 ===================================================== */
 
 .skills-grid {
+
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 22px;
 
@@ -337,6 +370,7 @@ section {
 }
 
 .skill-card {
+
     padding: 28px;
 
     text-align: left;
@@ -351,29 +385,32 @@ section {
 }
 
 .skill-card:hover {
+
     transform: translateY(-5px);
 
-    border-color: rgba(56, 189, 248, 0.5);
+    border-color: rgba(56, 189, 248, 0.45);
 
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .skill-icon {
+
     color: #38bdf8;
 
     font-size: 28px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .skill-card h3 {
+
     color: #ffffff;
 
     margin-top: 5px;
 }
 
 .skill-list {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -382,13 +419,14 @@ section {
 }
 
 .skill-list span {
-    background: #102538;
-
-    color: #bae6fd;
 
     padding: 7px 12px;
 
     border-radius: 20px;
+
+    background: #102538;
+
+    color: #bae6fd;
 
     font-size: 13px;
 }
@@ -399,17 +437,18 @@ section {
 ===================================================== */
 
 .project-card {
+
     display: flex;
 
     gap: 25px;
 
-    text-align: left;
-
-    background: #07111f;
-
     padding: 28px;
 
     margin-bottom: 20px;
+
+    text-align: left;
+
+    background: #07111f;
 
     border-radius: 14px;
 
@@ -419,37 +458,41 @@ section {
 }
 
 .project-card:hover {
+
     transform: translateX(5px);
 
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .project-number {
+
+    min-width: 45px;
+
     color: #38bdf8;
 
     font-size: 28px;
 
     font-weight: 700;
-
-    min-width: 45px;
 }
 
 .project-content h3 {
-    color: #ffffff;
 
     margin-top: 0;
+
+    color: #ffffff;
 
     font-size: 22px;
 }
 
 .project-content p {
+
     color: #aebdcc;
 
     line-height: 1.8;
 }
 
 .project-content .technology {
+
     color: #38bdf8;
 
     font-size: 14px;
@@ -461,6 +504,7 @@ section {
 ===================================================== */
 
 .publication-card {
+
     display: flex;
 
     align-items: center;
@@ -485,20 +529,22 @@ section {
 }
 
 .publication-card:hover {
+
     transform: translateY(-5px);
 
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 .publication-icon {
+
     min-width: 65px;
+
     height: 65px;
 
     display: flex;
 
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
     border-radius: 50%;
 
@@ -510,6 +556,7 @@ section {
 }
 
 .publication-label {
+
     color: #38bdf8;
 
     font-size: 13px;
@@ -520,23 +567,26 @@ section {
 }
 
 .publication-card h3 {
+
     color: #ffffff;
 
     font-size: 22px;
 }
 
 .publication-card p {
+
     color: #aebdcc;
 
     line-height: 1.7;
 }
 
 .publication-tag {
+
     display: inline-block;
 
-    margin-top: 5px;
-
     padding: 5px 12px;
+
+    margin-top: 5px;
 
     border-radius: 15px;
 
@@ -553,22 +603,23 @@ section {
 ===================================================== */
 
 .certifications-grid {
+
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
 }
 
 .cert-card {
+
     padding: 25px;
+
+    text-align: left;
 
     background: #07111f;
 
     border-radius: 13px;
-
-    text-align: left;
 
     border: 1px solid rgba(56, 189, 248, 0.1);
 
@@ -576,24 +627,28 @@ section {
 }
 
 .cert-card:hover {
+
     transform: translateY(-5px);
 
     border-color: rgba(56, 189, 248, 0.4);
 }
 
 .cert-card i {
+
     color: #38bdf8;
 
     font-size: 25px;
 }
 
 .cert-card h3 {
+
     color: #ffffff;
 
     font-size: 17px;
 }
 
 .cert-card p {
+
     color: #8fa4b8;
 }
 
@@ -603,17 +658,18 @@ section {
 ===================================================== */
 
 .achievement-card {
+
     display: flex;
 
     align-items: center;
 
     gap: 20px;
 
-    padding: 22px;
+    max-width: 800px;
 
     margin: 15px auto;
 
-    max-width: 800px;
+    padding: 22px;
 
     text-align: left;
 
@@ -625,20 +681,23 @@ section {
 }
 
 .achievement-card > i {
+
+    min-width: 30px;
+
     color: #38bdf8;
 
     font-size: 25px;
-
-    min-width: 30px;
 }
 
 .achievement-card h3 {
+
     margin: 0;
 
     color: #ffffff;
 }
 
 .achievement-card p {
+
     margin-bottom: 0;
 
     color: #9fb0c1;
@@ -650,18 +709,19 @@ section {
 ===================================================== */
 
 .contact-grid {
+
     display: grid;
 
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 20px;
 }
 
 .contact-card {
-    text-decoration: none;
 
     padding: 25px;
+
+    text-decoration: none;
 
     background: #07111f;
 
@@ -671,28 +731,32 @@ section {
 }
 
 .contact-card:hover {
+
     transform: translateY(-5px);
 
     border: 1px solid #38bdf8;
 }
 
 .contact-card i {
+
     color: #38bdf8;
 
     font-size: 28px;
 }
 
 .contact-card span {
+
     display: block;
 
-    color: #ffffff;
-
     margin-top: 10px;
+
+    color: #ffffff;
 
     font-weight: 600;
 }
 
 .contact-card p {
+
     color: #9fb0c1;
 
     font-size: 13px;
@@ -704,6 +768,7 @@ section {
 ===================================================== */
 
 footer {
+
     padding: 25px;
 
     background: #020a14;
@@ -715,13 +780,17 @@ footer {
 
 
 /* =====================================================
-   RESPONSIVE DESIGN
+   TABLET / MOBILE
 ===================================================== */
 
 @media (max-width: 800px) {
 
     .nav-center {
-        gap: 15px;
+        gap: 14px;
+    }
+
+    .nav-center li a {
+        font-size: 12px;
     }
 
     .hero-text {
@@ -746,37 +815,45 @@ footer {
     }
 
     .publication-card {
+
         flex-direction: column;
 
         text-align: center;
     }
 
     section {
+
         width: 94%;
 
         padding: 30px 20px;
     }
+
 }
 
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
 
 @media (max-width: 500px) {
 
     .nav-center {
-        gap: 10px;
+        gap: 9px;
     }
 
     .nav-center li a {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .profile-img {
+
         width: 170px;
         height: 170px;
     }
 
     .hero-text h1 {
+
         font-size: 32px;
     }
 
 }
-```
